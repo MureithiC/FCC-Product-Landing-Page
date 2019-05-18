@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <title>
             FCC Landing page
         </title>
@@ -11,7 +12,7 @@
     <body>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <header id="header">
-        <img src="https://ichef.bbci.co.uk/news/320/cpsprodpb/DFB6/production/_103407275_gettyimages-1027412410.jpg" width="20" height="20" id="header-img">
+        <img src="https://ichef.bbci.co.uk/news/320/cpsprodpb/DFB6/production/_103407275_gettyimages-1027412410.jpg" id="header-img">
         <h1>Huawei Phones</h1>
                 <div>
                   <nav id="nav-bar">
@@ -23,31 +24,79 @@
             
         </header>
         <main>
-            <div>
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <p>Stylish,quality and beautiful Phones <input type="email" placeholder="Enter your email adress" autofocus required id="email"></p>
-                <p><input type="submit" value="Get Started" id="submit"</p>
-                </form>
-            </div>
-            <div>
-                <i class="fas fa-fire"></i>
-                <h2> Phones</h2>
-                <p>Our Phones use the latest technology which is sourced locally. This will increase the longevity of your purchase.</h3>
-            </div>
-            <div>
-                <i class="fas fa-truck"></i>
-                <h2>Fast Shipping</h2>
-                <p>We make sure you recieve your Phone as soon as we have finished making it. We also provide free returns if you are not satisfied.</h3>
-            </div>  
-            <div>
-                <i class="fas fa-battery-full"></i>
-                <h2>Quality Assurance</h2>
-                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your phone.</h3>
-            </div>
-            </div>
-            <div>
+            
+                <div id="frm-div">
+                    <p id="frm-txt">Stylish,quality and beautiful Phones</p>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <p><input type="email" name="email" placeholder="Enter your email adress" autofocus required id="email"></p>
+                    <p><input type="submit" value="Get Started" id="submit"></p>
+                    </form>
+                </div>
+            <section id="Features">
+                <div>
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2> Phones</h2>
+                    <p class="exp">Our Phones use the latest technology which is sourced locally. This will increase the longevity of your purchase.</p>
+                </div>
+                <div>
+                    <i class="fas fa-truck"></i>
+                    <h2>Fast Shipping</h2>
+                    <p class="exp">We make sure you recieve your Phone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                </div>  
+                <div>
+                    <i class="fas fa-battery-full"></i>
+                    <h2>Quality Assurance</h2>
+                    <p class="exp">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your phone.</p>
+                </div>
+            </section>
+            <div id="How-It-Works">
                     <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/NfxwablloIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            <section id="Pricing">
+            <div id="trial">
+                <div id="p30pro">
+                    <p>Huawei P30 Pro</p>
+                        <img class="image" src="https://i.gadgets360cdn.com/products/large/1553612597_635_huawei_p30_pro.jpg?downsize=770:*&output-quality=70&output-format=webp">
+                            <ul>
+                                <p>$3000</p>
+                                <li>4000mAh Battery</li>
+                                <li>4/8/12 RAM</li>
+                                <li>Stylish colors</li>
+                            </ul>
+                            <input type="button" name="select" value="Select" class="sel">
+                </div>
+                <div id="p30">
+                    <p>Huawei P30</p>
+                        <img class="image" src="http://shopnagar.com/wp-content/uploads/2019/02/Huawei-P30-33.jpg?189db0&189db0">
+                            <ul>
+                                <p>$1500</p>
+                                <li>3750mAh Battery</li>
+                                <li>4/8 RAM</li>
+                                <li>Stylish colors</li>
+                            </ul>
+                            <input type="button" name="select" value="Select" class="sel">
+                </div>
+                <div id="p30lite">
+                    <p>Huawei P30 Lite</p>
+                        <img class="image" src="https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-lite/img/Huawei-Nova-4e_bg.jpg">
+                            <ul>
+                                <p>$1000</p>
+                                <li>3300mAh Battery</li>
+                                <li>4/6 RAM</li>
+                                <li>Stylish colors</li>
+                            </ul>
+                            <input type="button" name="select" value="Select" class="sel">
+            </div>
+            </section>
         </main>
+        <footer>
+            <ol>
+                <li> <a href="#Terms-conditions">Terms & Conditions</a></li>
+                <li> <a href="Privacy">Privacy</a></li>
+                <li> <a href="#contact-support">Contact & Support</a></li>
+                <li> <a href="#about">About</a></li>
+            </ol>
+            <span>&copy; Copyright 2019, Cyrus Mureithi| All Rights Reserved</span>
+        </footer>
     </body>
 </html>
