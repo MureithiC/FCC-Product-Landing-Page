@@ -23,6 +23,7 @@ nav ul {
     background-color: black;
     margin: 0;
     padding: 0;
+    height: 46px;
     overflow: hidden;
     position: fixed;
     top: 0;
