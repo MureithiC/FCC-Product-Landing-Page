@@ -6,10 +6,12 @@ main{
     text-align: center;
 }
 #header-img{
-    height: 40px;
+    height: 46px;
     width: 40px;
-    z-index: -2;
-
+}
+#header{
+    position: fixed;
+    display: flex;
 }
 h1{
     color: greenyellow;
@@ -18,13 +20,13 @@ h1{
 }
 nav ul {
     list-style-type: none;
-    background-color: gainsboro;
+    background-color: black;
     margin: 0;
     padding: 0;
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 98%;
 }
 
 nav li a{
@@ -48,7 +50,7 @@ i{
 }
 #frm-div{
     margin-top: auto;
-   padding: 50px;
+   padding-top: 50px;
 }
 h2{
     display: inline;
@@ -120,7 +122,7 @@ footer li{
     list-style: none;
 }
 footer a{
-    display: flex;
+    display: inline-flex;
     color: black;
     margin: 0px 10px;
     float: right;
