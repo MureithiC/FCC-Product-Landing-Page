@@ -1,38 +1,41 @@
-body{
-    background-color: lightgreen;
-    margin: auto;
+html,body{
+    margin: 0;
+    padding: 0;
 }
 main{
     text-align: center;
 }
 #header-img{
-    float:left;
-    width: 55px;
-    height: 30px;
+    height: 40px;
+    width: 40px;
+    z-index: -2;
+
 }
 h1{
     color: greenyellow;
     font-size: 120%;
+    float: left;
 }
-#header {
+nav ul {
+    list-style-type: none;
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     position: fixed;
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    top: 0;
     width: 100%;
-    margin: 0px;
 }
-nav li{
-    display: inline;
+
+nav li a{
+    float: right;
+    color: greenyellow;
+    text-align: center;
     padding: 14px 16px;
-    border: 1px solid rgb(82, 206, 11);
-  }
- li a{
-    color: red;
     text-decoration: none;
+    border-right: 1px solid black;
  } 
-nav li:hover{
+nav a:hover{
     background-color: aqua;  
 }
 i{
@@ -45,8 +48,7 @@ i{
 }
 #frm-div{
     margin-top: auto;
-    position: relative;
-    top: 50px;
+   padding: 50px;
 }
 h2{
     display: inline;
@@ -118,6 +120,7 @@ footer li{
     list-style: none;
 }
 footer a{
+    display: flex;
     color: black;
     margin: 0px 10px;
     float: right;
